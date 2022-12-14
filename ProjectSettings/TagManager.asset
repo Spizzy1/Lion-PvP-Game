@@ -6,11 +6,12 @@ TagManager:
   tags:
   - RightPlayer
   - Left Player
+  - perishPit
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - obstacles
   - Water
   - UI
   - 
