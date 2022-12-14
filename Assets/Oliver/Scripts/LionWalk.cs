@@ -22,7 +22,7 @@ public class LionWalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -9f, 3.5f), 0);
+        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -9f, 3.5f), 0); //El Tigre kan gå höger och vänster när man trycker på den knapp som är bindad till Right och Left - Oliver.
 
         if (Input.GetKey(left))
         {
