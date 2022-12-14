@@ -8,8 +8,7 @@ public class LionWalk : MonoBehaviour
     KeyCode left;
     [SerializeField]
     KeyCode right;
-    [SerializeField]
-    KeyCode zeta;
+    
 
 
 
@@ -27,11 +26,11 @@ public class LionWalk : MonoBehaviour
 
         if (Input.GetKey(left))
         {
-            transform.position += new Vector3(-3, 0, 0) * Time.deltaTime;
+            transform.position += new Vector3(-6, 0, 0) * Time.deltaTime;
         }
         if (Input.GetKey(right))
         {
-            transform.position += new Vector3(3, 0, 0) * Time.deltaTime;
+            transform.position += new Vector3(6, 0, 0) * Time.deltaTime;
         }
     }
 }
