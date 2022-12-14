@@ -11,11 +11,11 @@ public class MapManager : MonoBehaviour
     {
         
     }
-    void loadMap() //selects a random map to load in when progressing to next stage
+    public void loadMap() //selects a random map to load in when progressing to next stage
     {
         int randomIndex = Random.Range(0, maps.Length);
         float winPlayerX = GameObject.FindGameObjectWithTag("Player").transform.position.x;
-        GameObject loadedMap = Instantiate(maps[randomIndex], new Vector3(winPlayerX/Mathf.Abs(winPlayerX), 0, 0), Quaternion.identity);
+        GameObject loadedMap = Instantiate(maps[randomIndex], new Vector3(winPlayerX/Mathf.Abs(winPlayerX) * 10, 0, 0), Quaternion.identity);
 
     }
 
