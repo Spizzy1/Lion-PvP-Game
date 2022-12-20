@@ -7,11 +7,13 @@ public class V2Attack : MonoBehaviour
 
 
     [SerializeField]
-    string targetPlayer;
+    string targetPlayer; // vem attacken ska kolla efter kollision med (döda)
 
     float attackDurationTimer;
 
     float attackDuration = 1f;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,7 @@ public class V2Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        attackDurationTimer += Time.deltaTime;
+        attackDurationTimer += Time.deltaTime; // ger tid till timern
         
         
         
