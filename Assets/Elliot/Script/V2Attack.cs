@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class V2Attack : MonoBehaviour
 {
+
+
     [SerializeField]
     string targetPlayer;
 
@@ -36,11 +38,11 @@ public class V2Attack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent(typeof(Component)).ToString().IndexOf(targetPlayer) != 0) // det här förstör fienden när skottet träffar och lägger till poäng i scores
+        if (collision.gameObject.GetComponent(typeof(Component)).ToString().IndexOf(targetPlayer) > -1) // det här förstör fienden när skottet träffar och lägger till poäng i scores
         {
-            
+
             Destroy(collision.gameObject);
-            Destroy(gameObject);
+            
         }
     }
 }
