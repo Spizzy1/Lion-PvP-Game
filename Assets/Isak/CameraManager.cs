@@ -17,7 +17,7 @@ public class CameraManager : MonoBehaviour
     {
         if (followsPlayer) //Sets the camera position if the camera is supposed to follow the player.
         {
-            gameObject.transform.position = new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
+            gameObject.transform.position = new Vector3(GameObject.FindGameObjectWithTag("Left Player").transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
         }
         else
         {

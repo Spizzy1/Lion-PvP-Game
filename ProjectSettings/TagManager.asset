@@ -8,6 +8,8 @@ TagManager:
   - Left Player
   - perishPit
   - floor
+  - Attack1
+  - Attack2
   layers:
   - Default
   - TransparentFX
