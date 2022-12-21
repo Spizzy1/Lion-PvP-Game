@@ -50,7 +50,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 276
   right: 275
-  zeta: 0
 --- !u!212 &5509102702026421453
 SpriteRenderer:
   m_ObjectHideFlags: 0

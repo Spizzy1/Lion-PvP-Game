@@ -14,8 +14,10 @@ GameObject:
   - component: {fileID: 5509102702026421452}
   - component: {fileID: 5509102702026421456}
   - component: {fileID: 5509102702026421457}
+  - component: {fileID: 5632807433479267725}
+  - component: {fileID: -2048478547959789604}
   m_Layer: 0
-  m_Name: Square 1
+  m_Name: LeftSquare
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,7 +119,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -161,3 +163,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5272fd269183414185fefdeb3b2f920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5632807433479267725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5509102702026421455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b4d12c7481c0d4095ace224548da08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startAttack: 119
+  attackObject: {fileID: 3565217092919067362, guid: f18f1f35fed467a4b8360ff08ade69d8, type: 3}
+  lionLocation: {fileID: 5509102702026421459}
+--- !u!114 &-2048478547959789604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5509102702026421455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c228ffaba63d2141bec477405507a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 7
+  rb: {fileID: 0}
+  isGrounded: 1
